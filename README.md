@@ -1,6 +1,5 @@
 # coffee-shop-website
-<a href="coffee-shop-website1.netlify.app" style="text-align:center;">Coffee Shop Website
-</a>
+<a href="https://coffee-shop-website1.netlify.app/" target="_blank">Visit Coffee Shop Website</a>
 <br>
 <br>
 
