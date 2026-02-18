@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Chai & Brew Coffee Shop India</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top scrolled" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <div class="logo-icon me-2"><i class="fas fa-mug-hot"></i></div>
+      <span class="logo-text">Chai <span>&</span> Brew</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html"><i class="fas fa-coffee me-1"></i>Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-info-circle me-1"></i>About</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="fas fa-images me-1"></i>Gallery</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html"><i class="fas fa-map-marker-alt me-1"></i>Contact</a></li>
+        <li class="nav-item"><a class="nav-link btn-reserve" href="reservation.html"><i class="fas fa-calendar-check me-1"></i>Reserve</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="section-tag"><i class="fas fa-map-marker-alt"></i> Find Us</p>
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you — visit, call, or write to us</p>
+    <nav aria-label="breadcrumb" class="mt-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Contact</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<!-- Info Cards -->
+<section class="section-padding bg-light-cream">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-3 col-6">
+        <div class="contact-card fade-up">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h5>Address</h5>
+          <p>Jalandhar - Delhi, Grand Trunk Rd, Phagwara, Punjab 144411</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="contact-card fade-up">
+          <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+          <h5>Phone</h5>
+          <p><a href="tel:+919876543210" style="color:inherit;text-decoration:none;">+91 98765 43210</a></p>
+          <p><a href="tel:+918012345678" style="color:inherit;text-decoration:none;">+91 01234 56789</a></p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="contact-card fade-up">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <h5>Email</h5>
+          <p><a href="mailto:hello@chaiandbrew.in" style="color:inherit;text-decoration:none;">hello@chaiandbrew.in</a></p>
+          <p><a href="mailto:support@chaiandbrew.in" style="color:inherit;text-decoration:none;">support@chaiandbrew.in</a></p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="contact-card fade-up">
+          <div class="contact-icon"><i class="fas fa-clock"></i></div>
+          <h5>Hours</h5>
+          <p>Mon–Fri: 7AM–10PM<br>Sat: 8AM–11PM<br>Sun: 9AM–9PM</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form + Map -->
+<section class="section-padding">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Form -->
+      <div class="col-lg-6">
+        <div class="contact-form-box fade-up">
+          <p class="section-tag"><i class="fas fa-paper-plane"></i> Send Message</p>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="mb-4" style="color:var(--text-light)">Fill the form below and we'll respond within 24 hours.</p>
+          <form id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label"><i class="fas fa-user me-1 text-warning"></i> Full Name *</label>
+                <input type="text" class="form-control" name="name" placeholder="Name" required minlength="3" />
+                <div class="invalid-feedback">Please enter your full name (min 3 chars).</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label"><i class="fas fa-envelope me-1 text-warning"></i> Email Address *</label>
+                <input type="email" class="form-control" name="email" placeholder="name@gmail.com" required />
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label"><i class="fas fa-phone me-1 text-warning"></i> Mobile Number *</label>
+                <input type="tel" class="form-control" name="phone" placeholder="+91" required maxlength="10" />
+                <div class="invalid-feedback">Enter valid 10-digit Indian mobile number.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label"><i class="fas fa-tag me-1 text-warning"></i> Subject *</label>
+                <select class="form-select" name="subject" required>
+                  <option value="">Select a subject</option>
+                  <option>General Enquiry</option>
+                  <option>Feedback</option>
+                  <option>Franchise Enquiry</option>
+                  <option>Catering / Events</option>
+                  <option>Careers</option>
+                  <option>Other</option>
+                </select>
+                <div class="invalid-feedback">Please select a subject.</div>
+              </div>
+              <div class="col-12">
+                <label class="form-label"><i class="fas fa-comment me-1 text-warning"></i> Your Message *</label>
+                <textarea class="form-control" name="message" rows="5" placeholder="Write your message here..." required minlength="20"></textarea>
+                <div class="invalid-feedback">Please write a message (at least 20 characters).</div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="privacyCheck" required />
+                  <label class="form-check-label" for="privacyCheck">
+                    I agree to the <a href="#" style="color:var(--gold)">Privacy Policy</a> and consent to being contacted. *
+                  </label>
+                  <div class="invalid-feedback">You must agree before submitting.</div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary-custom w-100">
+                  Send Message <i class="fas fa-paper-plane ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Map -->
+      <div class="col-lg-6">
+        <div class="fade-up">
+          <p class="section-tag"><i class="fas fa-map"></i> Our Location</p>
+          <h2 class="section-title">Find Our Flagship Store</h2>
+          <p class="mb-4" style="color:var(--text-light)">Located in the heart of Jalandhar, easily accessible by  bus,train and cab.</p>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4207.937584452679!2d75.70236810552608!3d31.255737213648366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f5e9c489cf3%3A0x4049a5409d53c300!2sLovely%20Professional%20University!5e0!3m2!1sen!2sin!4v1771390650875!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <!-- Quick Contact Buttons -->
+          <div class="d-flex gap-3 mt-4 flex-wrap">
+            <a href="tel:+919876543210" class="btn btn-primary-custom">
+              <i class="fas fa-phone me-2"></i>Call Now
+            </a>
+            <a href="https://wa.me/919876543210" target="_blank" class="btn" style="background:#25D366;color:white;padding:14px 32px;border-radius:50px;font-weight:700;font-size:14px;text-decoration:none;">
+              <i class="fab fa-whatsapp me-2"></i>WhatsApp
+            </a>
+            <a href="https://maps.app.goo.gl/n7sh2dphFnVwAcnP9" target="_blank" class="btn btn-outline-dark" style="border-radius:50px;padding:14px 28px;font-weight:700;font-size:14px;">
+              <i class="fas fa-directions me-2"></i>Directions
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Branches -->
+<section class="section-padding bg-light-cream">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <p class="section-tag"><i class="fas fa-store"></i> Locations</p>
+      <h2 class="section-title">Our Branches Across India</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="branch-card fade-up">
+          <div class="branch-icon"><i class="fas fa-city"></i></div>
+          <h5>Jalandhar — Flagship</h5>
+          <p><i class="fas fa-map-marker-alt me-1 text-warning"></i> Jalandhar 100001</p>
+          <p><i class="fas fa-phone me-1 text-warning"></i> +91 80 1234 5678</p>
+          <span class="badge-open"><i class="fas fa-circle me-1"></i> Open Now</span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="branch-card fade-up">
+          <div class="branch-icon"><i class="fas fa-city"></i></div>
+          <h5>Mumbai — Bandra West</h5>
+          <p><i class="fas fa-map-marker-alt me-1 text-warning"></i> Shop 8, Hill Road, Bandra 400050</p>
+          <p><i class="fas fa-phone me-1 text-warning"></i> +91 22 9876 5432</p>
+          <span class="badge-open"><i class="fas fa-circle me-1"></i> Open Now</span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="branch-card fade-up">
+          <div class="branch-icon"><i class="fas fa-city"></i></div>
+          <h5>Chennai — Anna Nagar</h5>
+          <p><i class="fas fa-map-marker-alt me-1 text-warning"></i> 15, 2nd Avenue, Anna Nagar 600040</p>
+          <p><i class="fas fa-phone me-1 text-warning"></i> +91 44 7777 8888</p>
+          <span class="badge-open"><i class="fas fa-circle me-1"></i> Open Now</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.branch-card {
+  background: var(--white); border-radius: 16px;
+  padding: 28px; box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+.branch-card:hover { transform: translateY(-5px); }
+.branch-icon { font-size: 32px; color: var(--gold); margin-bottom: 12px; }
+.branch-card h5 { font-family: var(--font-display); color: var(--brown-dark); margin-bottom: 12px; }
+.branch-card p { font-size: 14px; color: var(--text-light); margin-bottom: 6px; }
+.badge-open { background: #e8f8ef; color: #2ECC71; padding: 5px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; }
+.badge-open i { font-size: 8px; }
+</style>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand d-flex align-items-center mb-3">
+          <div class="logo-icon me-2"><i class="fas fa-mug-hot"></i></div>
+          <span class="logo-text">Chai <span>&</span> Brew</span>
+        </div>
+        <p>India's favourite artisan coffee shop — crafting extraordinary experiences one cup at a time since 2010.</p>
+        <div class="social-links mt-3">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h5 class="footer-heading">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+          <li><a href="menu.html"><i class="fas fa-angle-right"></i> Menu</a></li>
+          <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+          <li><a href="gallery.html"><i class="fas fa-angle-right"></i> Gallery</a></li>
+          <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact</a></li>
+          <li><a href="reservation.html"><i class="fas fa-angle-right"></i> Reservation</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-heading">Opening Hours</h5>
+        <ul class="hours-list">
+          <li><span>Monday – Friday</span><span>7:00 AM – 10:00 PM</span></li>
+          <li><span>Saturday</span><span>8:00 AM – 11:00 PM</span></li>
+          <li><span>Sunday</span><span>9:00 AM – 9:00 PM</span></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-heading">Contact Us</h5>
+        <ul class="contact-list">
+          <li><i class="fas fa-map-marker-alt"></i> Jalandhar - Delhi, Grand Trunk Rd, Phagwara, Punjab 144411</li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:hello@chaiandbrew.in">hello@chaiandbrew.in</a></li>
+          <li><i class="fas fa-globe"></i> www.chaiandbrew.in</li>
+        </ul>
+        <div class="payment-methods mt-3">
+          <i class="fab fa-cc-visa" title="Visa"></i>
+          <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+          <i class="fab fa-google-pay" title="Google Pay"></i>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p class="footer-copy">© 2026 Chai & Brew. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

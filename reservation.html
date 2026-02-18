@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Table Reservation - Chai & Brew Coffee Shop India</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top scrolled" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <div class="logo-icon me-2"><i class="fas fa-mug-hot"></i></div>
+      <span class="logo-text">Chai <span>&</span> Brew</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html"><i class="fas fa-coffee me-1"></i>Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-info-circle me-1"></i>About</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="fas fa-images me-1"></i>Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-map-marker-alt me-1"></i>Contact</a></li>
+        <li class="nav-item"><a class="nav-link btn-reserve active" href="reservation.html"><i class="fas fa-calendar-check me-1"></i>Reserve</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="section-tag"><i class="fas fa-calendar-check"></i> Book a Seat</p>
+    <h1>Table Reservation</h1>
+    <p>Reserve your perfect spot at Chai & Brew — we'll have it ready for you</p>
+    <nav aria-label="breadcrumb" class="mt-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Reservation</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<!-- Why Reserve -->
+<section class="section-padding bg-light-cream">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-md-3 col-6">
+        <div class="why-item fade-up">
+          <i class="fas fa-bolt"></i>
+          <h5>Instant Confirmation</h5>
+          <p>Receive WhatsApp + email confirmation immediately.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="why-item fade-up">
+          <i class="fas fa-chair"></i>
+          <h5>Preferred Seating</h5>
+          <p>Choose your preferred area — window, terrace or indoor.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="why-item fade-up">
+          <i class="fas fa-gift"></i>
+          <h5>Special Occasions</h5>
+          <p>Let us know if it's a birthday or anniversary — we have surprises!</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="why-item fade-up">
+          <i class="fas fa-rupee-sign"></i>
+          <h5>No Booking Fee</h5>
+          <p>Completely free to reserve — pay only for what you order.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reservation Form -->
+<section class="section-padding">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="reservation-box fade-up">
+          <!-- Progress Steps -->
+          <div class="progress-steps mb-5">
+            <div class="step active" id="step1">
+              <div class="step-num">1</div>
+              <span class="step-label">Details</span>
+            </div>
+            <div class="step" id="step2">
+              <div class="step-num">2</div>
+              <span class="step-label">Preferences</span>
+            </div>
+            <div class="step" id="step3">
+              <div class="step-num">3</div>
+              <span class="step-label">Confirm</span>
+            </div>
+          </div>
+
+          <p class="section-tag"><i class="fas fa-calendar-alt"></i> Make a Reservation</p>
+          <h2 class="section-title">Book Your Table</h2>
+          <p class="mb-5" style="color:var(--text-light)">Fill in the details below and we'll confirm your booking within minutes.</p>
+
+          <form id="reservationForm" novalidate>
+            <!-- Personal Details -->
+            <div class="form-section mb-4">
+              <h5 class="form-section-title"><i class="fas fa-user me-2 text-warning"></i>Personal Information</h5>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Full Name *</label>
+                  <input type="text" class="form-control" name="name" placeholder="Anjali Sharma" required minlength="3" />
+                  <div class="invalid-feedback">Please enter your full name (min 3 chars).</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Mobile Number *</label>
+                  <div class="input-group">
+                    <span class="input-group-text" style="background:var(--cream-dark);border-color:var(--cream-dark);font-weight:700;">+91</span>
+                    <input type="tel" class="form-control" name="phone" placeholder="98765 43210" required maxlength="10" />
+                  </div>
+                  <div class="invalid-feedback d-block" id="phoneError"></div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Email Address *</label>
+                  <input type="email" class="form-control" name="email" placeholder="anjali@example.in" required />
+                  <div class="invalid-feedback">Enter a valid email address.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Number of Guests *</label>
+                  <select class="form-select" name="guests" required>
+                    <option value="">Select guests</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 Persons</option>
+                    <option value="3">3 Persons</option>
+                    <option value="4">4 Persons</option>
+                    <option value="5">5 Persons</option>
+                    <option value="6">6 Persons</option>
+                    <option value="7-10">7–10 Persons (Group)</option>
+                    <option value="10+">10+ (Event Enquiry)</option>
+                  </select>
+                  <div class="invalid-feedback">Please select number of guests.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Booking Details -->
+            <div class="form-section mb-4">
+              <h5 class="form-section-title"><i class="fas fa-calendar me-2 text-warning"></i>Booking Details</h5>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Preferred Date *</label>
+                  <input type="date" class="form-control" name="date" id="resDate" required />
+                  <div class="invalid-feedback">Please select a date (must be today or future).</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Preferred Time *</label>
+                  <select class="form-select" name="time" required>
+                    <option value="">Select time slot</option>
+                    <optgroup label="Morning">
+                      <option>7:00 AM – 8:00 AM</option>
+                      <option>8:00 AM – 9:00 AM</option>
+                      <option>9:00 AM – 10:00 AM</option>
+                      <option>10:00 AM – 11:00 AM</option>
+                    </optgroup>
+                    <optgroup label="Afternoon">
+                      <option>12:00 PM – 1:00 PM</option>
+                      <option>1:00 PM – 2:00 PM</option>
+                      <option>2:00 PM – 3:00 PM</option>
+                      <option>3:00 PM – 4:00 PM</option>
+                    </optgroup>
+                    <optgroup label="Evening">
+                      <option>5:00 PM – 6:00 PM</option>
+                      <option>6:00 PM – 7:00 PM</option>
+                      <option>7:00 PM – 8:00 PM</option>
+                      <option>8:00 PM – 9:00 PM</option>
+                    </optgroup>
+                  </select>
+                  <div class="invalid-feedback">Please select a time slot.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Seating Preference</label>
+                  <select class="form-select" name="seating">
+                    <option value="">No preference</option>
+                    <option>Indoor — Air Conditioned</option>
+                    <option>Window Seat</option>
+                    <option>Outdoor Terrace</option>
+                    <option>Private Booth</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Branch *</label>
+                  <select class="form-select" name="branch" required>
+                    <option value="">Select branch</option>
+                    <option>Bengaluru — MG Road (Flagship)</option>
+                    <option>Mumbai — Bandra West</option>
+                    <option>Chennai — Anna Nagar</option>
+                    <option>Delhi — Connaught Place</option>
+                    <option>Hyderabad — Banjara Hills</option>
+                    <option>Pune — Koregaon Park</option>
+                    <option>Kochi — MG Road</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a branch.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Special Requests -->
+            <div class="form-section mb-4">
+              <h5 class="form-section-title"><i class="fas fa-star me-2 text-warning"></i>Special Requests</h5>
+              <div class="row g-3">
+                <div class="col-12">
+                  <label class="form-label">Occasion (Optional)</label>
+                  <div class="d-flex flex-wrap gap-3">
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="birthday" name="occasion" value="birthday"><label class="form-check-label" for="birthday"><i class="fas fa-birthday-cake me-1 text-warning"></i>Birthday</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="anniversary" name="occasion" value="anniversary"><label class="form-check-label" for="anniversary"><i class="fas fa-heart me-1 text-danger"></i>Anniversary</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="business" name="occasion" value="business"><label class="form-check-label" for="business"><i class="fas fa-briefcase me-1 text-info"></i>Business Meeting</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="casual" name="occasion" value="casual"><label class="form-check-label" for="casual"><i class="fas fa-coffee me-1 text-brown"></i>Casual Visit</label></div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Dietary Requirements / Additional Notes</label>
+                  <textarea class="form-control" name="notes" rows="4" placeholder="E.g. Vegan options needed, wheelchair accessible, specific coffee preferences..."></textarea>
+                </div>
+              </div>
+            </div>
+
+            <!-- Terms -->
+            <div class="form-check mb-4">
+              <input class="form-check-input" type="checkbox" id="termsCheck" required />
+              <label class="form-check-label" for="termsCheck">
+                I agree to the <a href="#" style="color:var(--gold)">Terms & Conditions</a> and <a href="#" style="color:var(--gold)">Cancellation Policy</a>. *
+              </label>
+              <div class="invalid-feedback">You must agree to the terms.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary-custom w-100" style="font-size:16px;padding:16px;">
+              <i class="fas fa-calendar-check me-2"></i>Confirm Reservation
+            </button>
+            <p class="text-center mt-3" style="font-size:13px;color:var(--text-light);">
+              <i class="fas fa-shield-alt me-1 text-success"></i>Your information is secure and will never be shared. You can cancel up to 2 hours before your reservation.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Map -->
+<section class="section-padding bg-light-cream position-center">
+  <div class="container">
+    <div class="section-header text-center mb-4">
+      <p class="section-tag"><i class="fas fa-map"></i> Location</p>
+      <h2 class="section-title">Visit Our Flagship — Bengaluru</h2>
+    </div>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4207.937584452679!2d75.70236810552608!3d31.255737213648366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f5e9c489cf3%3A0x4049a5409d53c300!2sLovely%20Professional%20University!5e0!3m2!1sen!2sin!4v1771390596019!5m2!1sen!2sin" width="1305" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<style>
+.why-item { background: var(--white); border-radius: 20px; padding: 30px 20px; box-shadow: var(--shadow); height: 100%; transition: var(--transition); }
+.why-item:hover { transform: translateY(-5px); }
+.why-item i { font-size: 36px; color: var(--gold); margin-bottom: 15px; display: block; }
+.why-item h5 { font-family: var(--font-display); color: var(--brown-dark); margin-bottom: 10px; }
+.why-item p { font-size: 14px; color: var(--text-light); margin: 0; }
+.form-section { background: var(--cream); border-radius: 16px; padding: 24px; }
+.form-section-title { font-family: var(--font-display); color: var(--brown-dark); margin-bottom: 20px; font-size: 18px; }
+</style>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand d-flex align-items-center mb-3">
+          <div class="logo-icon me-2"><i class="fas fa-mug-hot"></i></div>
+          <span class="logo-text">Chai <span>&</span> Brew</span>
+        </div>
+        <p>India's favourite artisan coffee shop — crafting extraordinary experiences one cup at a time since 2010.</p>
+        <div class="social-links mt-3">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h5 class="footer-heading">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+          <li><a href="menu.html"><i class="fas fa-angle-right"></i> Menu</a></li>
+          <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+          <li><a href="gallery.html"><i class="fas fa-angle-right"></i> Gallery</a></li>
+          <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact</a></li>
+          <li><a href="reservation.html"><i class="fas fa-angle-right"></i> Reservation</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-heading">Opening Hours</h5>
+        <ul class="hours-list">
+          <li><span>Monday – Friday</span><span>7:00 AM – 10:00 PM</span></li>
+          <li><span>Saturday</span><span>8:00 AM – 11:00 PM</span></li>
+          <li><span>Sunday</span><span>9:00 AM – 9:00 PM</span></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-heading">Contact Us</h5>
+        <ul class="contact-list">
+          <li><i class="fas fa-map-marker-alt"></i> Jalandhar - Delhi, Grand Trunk Rd, Phagwara, Punjab 144411</li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:hello@chaiandbrew.in">hello@chaiandbrew.in</a></li>
+          <li><i class="fas fa-globe"></i> www.chaiandbrew.in</li>
+        </ul>
+        <div class="payment-methods mt-3">
+          <i class="fab fa-cc-visa" title="Visa"></i>
+          <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+          <i class="fab fa-google-pay" title="Google Pay"></i>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p class="footer-copy">© 2026 Chai & Brew. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+<script>
+// Extra phone validation for reservation
+document.getElementById('reservationForm').addEventListener('submit', function(e) {
+  const phone = this.querySelector('[name="phone"]');
+  const err = document.getElementById('phoneError');
+  if (phone && !/^[6-9]\d{9}$/.test(phone.value.trim())) {
+    err.textContent = 'Enter a valid 10-digit Indian mobile number starting with 6-9.';
+    phone.classList.add('is-invalid');
+  } else if (phone) {
+    err.textContent = '';
+    phone.classList.remove('is-invalid');
+  }
+}, true);
+</script>
+</body>
+</html>

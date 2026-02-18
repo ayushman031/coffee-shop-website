@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Chai & Brew Coffee Shop India</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top scrolled" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <div class="logo-icon me-2"><i class="fas fa-mug-hot"></i></div>
+      <span class="logo-text">Chai <span>&</span> Brew</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html"><i class="fas fa-coffee me-1"></i>Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-info-circle me-1"></i>About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="gallery.html"><i class="fas fa-images me-1"></i>Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-map-marker-alt me-1"></i>Contact</a></li>
+        <li class="nav-item"><a class="nav-link btn-reserve" href="reservation.html"><i class="fas fa-calendar-check me-1"></i>Reserve</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="section-tag"><i class="fas fa-camera"></i> Visual Journey</p>
+    <h1>Our Gallery</h1>
+    <p>A glimpse into the Chai & Brew world — captured in frames</p>
+    <nav aria-label="breadcrumb" class="mt-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Gallery</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<section class="section-padding">
+  <div class="container">
+    <!-- Filter -->
+    <div class="filter-tabs mb-5">
+      <button class="filter-tab active" data-gfilter="all">All</button>
+      <button class="filter-tab" data-gfilter="coffee">Coffee Art</button>
+      <button class="filter-tab" data-gfilter="interior">Interiors</button>
+      <button class="filter-tab" data-gfilter="food">Food</button>
+      <button class="filter-tab" data-gfilter="events">Events</button>
+    </div>
+
+    <div class="row g-3" id="galleryGrid">
+      <div class="col-md-4 col-6 gallery-col" data-gcategory="coffee"><div class="gallery-item fade-up">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600" alt="Coffee Art" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+      </div></div>
+      <div class="col-md-4 col-6 gallery-col" data-gcategory="interior"><div class="gallery-item fade-up">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600" alt="Interior" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+      </div></div>
+      <div class="col-md-4 col-6 gallery-col" data-gcategory="coffee"><div class="gallery-item fade-up">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600" alt="Latte Art" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+      </div></div>
+      <div class="col-md-6 col-6 gallery-col" data-gcategory="food"><div class="gallery-item fade-up">
+        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600" alt="Food" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+      </div></div>
+      <div class="col-md-6 col-12 gallery-col" data-gcategory="interior"><div class="gallery-item fade-up">
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800" alt="Café Interior" loading="lazy" style="height:300px;" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+      </div></div>
+      <div class="col-md-4 col-6 gallery-col" data-gcategory="events"><div class="gallery-item fade-up">
+        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600" alt="Events" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+      </div></div>
+      <div class="col-md-4 col-6 gallery-col" data-gcategory="coffee"><div class="gallery-item fade-up">
+        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600" alt="Cold Brew" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+      </div></div>
+      <div class="col-md-4 col-6 gallery-col" data-gcategory="food"><div class="gallery-item fade-up">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600" alt="Pastry" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+      </div></div>
+      <div class="col-md-6 col-6 gallery-col" data-gcategory="interior"><div class="gallery-item fade-up">
+        <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=600" alt="Seating" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+      </div></div>
+      <div class="col-md-6 col-12 gallery-col" data-gcategory="events"><div class="gallery-item fade-up">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800" alt="Event" loading="lazy" style="height:300px;" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+      </div></div>
+      <div class="col-md-4 col-6 gallery-col" data-gcategory="coffee"><div class="gallery-item fade-up">
+        <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=600" alt="Filter Coffee" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+      </div></div>
+      <div class="col-md-4 col-6 gallery-col" data-gcategory="food"><div class="gallery-item fade-up">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600" alt="Cake" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+      </div></div>
+      <div class="col-md-4 col-6 gallery-col" data-gcategory="events"><div class="gallery-item fade-up">
+        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600" alt="Coffee Beans" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Instagram Feed Section -->
+<section class="section-padding bg-light-cream">
+  <div class="container">
+    <div class="section-header text-center mb-4">
+      <p class="section-tag"><i class="fab fa-instagram"></i> Follow Us</p>
+      <h2 class="section-title">@chaiandbrew</h2>
+      <p class="section-desc">Tag us in your coffee moments — we'd love to feature you!</p>
+    </div>
+    <div class="text-center mt-4">
+      <a href="#" class="btn btn-primary-custom"><i class="fab fa-instagram me-2"></i>Follow on Instagram</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand d-flex align-items-center mb-3">
+          <div class="logo-icon me-2"><i class="fas fa-mug-hot"></i></div>
+          <span class="logo-text">Chai <span>&</span> Brew</span>
+        </div>
+        <p>India's favourite artisan coffee shop — crafting extraordinary experiences one cup at a time since 2010.</p>
+        <div class="social-links mt-3">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h5 class="footer-heading">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+          <li><a href="menu.html"><i class="fas fa-angle-right"></i> Menu</a></li>
+          <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+          <li><a href="gallery.html"><i class="fas fa-angle-right"></i> Gallery</a></li>
+          <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact</a></li>
+          <li><a href="reservation.html"><i class="fas fa-angle-right"></i> Reservation</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-heading">Opening Hours</h5>
+        <ul class="hours-list">
+          <li><span>Monday – Friday</span><span>7:00 AM – 10:00 PM</span></li>
+          <li><span>Saturday</span><span>8:00 AM – 11:00 PM</span></li>
+          <li><span>Sunday</span><span>9:00 AM – 9:00 PM</span></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-heading">Contact Us</h5>
+        <ul class="contact-list">
+          <li><i class="fas fa-map-marker-alt"></i> Jalandhar - Delhi, Grand Trunk Rd, Phagwara, Punjab 144411</li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:hello@chaiandbrew.in">hello@chaiandbrew.in</a></li>
+          <li><i class="fas fa-globe"></i> www.chaiandbrew.in</li>
+        </ul>
+        <div class="payment-methods mt-3">
+          <i class="fab fa-cc-visa" title="Visa"></i>
+          <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+          <i class="fab fa-google-pay" title="Google Pay"></i>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p class="footer-copy">© 2026 Chai & Brew. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+<script>
+// Gallery filter
+document.querySelectorAll('[data-gfilter]').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('[data-gfilter]').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    const f = tab.dataset.gfilter;
+    document.querySelectorAll('.gallery-col').forEach(col => {
+      col.style.display = (f === 'all' || col.dataset.gcategory === f) ? 'block' : 'none';
+    });
+  });
+});
+</script>
+</body>
+</html>

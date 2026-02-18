@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chai & Brew - Premium Coffee Shop India</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <div class="logo-icon me-2"><i class="fas fa-mug-hot"></i></div>
+      <span class="logo-text">Chai <span>&</span> Brew</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-home me-1"></i>Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html"><i class="fas fa-coffee me-1"></i>Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-info-circle me-1"></i>About</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="fas fa-images me-1"></i>Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-map-marker-alt me-1"></i>Contact</a></li>
+        <li class="nav-item"><a class="nav-link btn-reserve" href="reservation.html"><i class="fas fa-calendar-check me-1"></i>Reserve</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Carousel -->
+<section id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="carousel-bg" style="background: linear-gradient(rgba(30,20,10,0.6),rgba(30,20,10,0.6)), url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600') center/cover no-repeat;"></div>
+      <div class="carousel-caption text-start">
+        <p class="carousel-subtitle">Welcome to India's Finest</p>
+        <h1 class="carousel-title">Where Every Sip <br><span>Tells a Story</span></h1>
+        <p class="carousel-desc">Crafted with passion, served with love — experience the finest blends from across India.</p>
+        <a href="menu.html" class="btn btn-primary-custom me-3">Explore Menu</a>
+        <a href="reservation.html" class="btn btn-outline-custom">Book a Table</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-bg" style="background: linear-gradient(rgba(30,20,10,0.6),rgba(30,20,10,0.6)), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1600') center/cover no-repeat;"></div>
+      <div class="carousel-caption text-start">
+        <p class="carousel-subtitle">Our Speciality</p>
+        <h1 class="carousel-title">Artisan Coffee <br><span>Brewed Fresh</span></h1>
+        <p class="carousel-desc">Single-origin beans roasted in-house daily, brewed by our certified baristas.</p>
+        <a href="menu.html" class="btn btn-primary-custom me-3">View Our Blends</a>
+        <a href="about.html" class="btn btn-outline-custom">Our Story</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-bg" style="background: linear-gradient(rgba(30,20,10,0.6),rgba(30,20,10,0.6)), url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1600') center/cover no-repeat;"></div>
+      <div class="carousel-caption text-start">
+        <p class="carousel-subtitle">Ambience & Comfort</p>
+        <h1 class="carousel-title">Your Perfect <br><span>Coffee Corner</span></h1>
+        <p class="carousel-desc">A cozy retreat in the heart of the city — ideal for work, meetings, or a quiet escape.</p>
+        <a href="gallery.html" class="btn btn-primary-custom me-3">See Gallery</a>
+        <a href="contact.html" class="btn btn-outline-custom">Find Us</a>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</section>
+
+<!-- Stats Bar -->
+<section class="stats-bar">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-6 col-md-3 stat-item">
+        <i class="fas fa-mug-hot"></i>
+        <h3 class="counter" data-target="5000">0</h3>
+        <p>Cups Daily</p>
+      </div>
+      <div class="col-6 col-md-3 stat-item">
+        <i class="fas fa-leaf"></i>
+        <h3 class="counter" data-target="25">0</h3>
+        <p>Coffee Varieties</p>
+      </div>
+      <div class="col-6 col-md-3 stat-item">
+        <i class="fas fa-users"></i>
+        <h3 class="counter" data-target="12000">0</h3>
+        <p>Happy Customers</p>
+      </div>
+      <div class="col-6 col-md-3 stat-item">
+        <i class="fas fa-award"></i>
+        <h3 class="counter" data-target="15">0</h3>
+        <p>Awards Won</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Menu -->
+<section class="section-padding bg-light-cream">
+  <div class="container">
+    <div class="section-header text-center">
+      <p class="section-tag"><i class="fas fa-star"></i> Featured Picks</p>
+      <h2 class="section-title">Our Most Loved Brews</h2>
+      <p class="section-desc">From classic filter coffee to exotic blends — something for every palate.</p>
+    </div>
+    <div class="row g-4 mt-3">
+      <div class="col-md-4">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="img/cfemg.jpg" alt="South Indian Filter Coffee" class="img-fluid" loading="lazy" />
+            <span class="badge-tag">Bestseller</span>
+          </div>
+          <div class="menu-card-body">
+            <h4>South Indian Filter Coffee</h4>
+            <p>Traditional decoction with farm-fresh milk, served in authentic dabarah-tumbler set.</p>
+            <div class="menu-footer">
+              <span class="price">₹ 80</span>
+              <a href="menu.html" class="btn-sm-custom">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="img/cfebrew.jpg" alt="Cold Brew Coffee" class="img-fluid" loading="lazy" />
+            <span class="badge-tag new">New</span>
+          </div>
+          <div class="menu-card-body">
+            <h4>Cold Brew Delight</h4>
+            <p>Steeped 18 hours in cold water — smooth, bold, and absolutely refreshing.</p>
+            <div class="menu-footer">
+              <span class="price">₹ 180</span>
+              <a href="menu.html" class="btn-sm-custom">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img src="img/cfee.jpg" alt="Masala Chai Latte" class="img-fluid" loading="lazy" />
+            <span class="badge-tag popular">Popular</span>
+          </div>
+          <div class="menu-card-body">
+            <h4>Masala Chai Latte</h4>
+            <p>The warmth of Indian spices — cardamom, ginger & cinnamon — meets silky steamed milk.</p>
+            <div class="menu-footer">
+              <span class="price">₹ 120</span>
+              <a href="menu.html" class="btn-sm-custom">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <a href="menu.html" class="btn btn-primary-custom">View Full Menu <i class="fas fa-arrow-right ms-2"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- About Snippet -->
+<section class="about-snippet section-padding">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="about-img-grid">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600" alt="Coffee Brewing" class="img-fluid main-img" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=300" alt="Coffee Beans" class="img-fluid corner-img" loading="lazy" />
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <p class="section-tag"><i class="fas fa-seedling"></i> Our Story</p>
+        <h2 class="section-title">Born From Passion, <br>Brewed with Purpose</h2>
+        <p>Founded in 2010 in Bengaluru, Chai & Brew started as a tiny stall serving authentic South Indian coffee to morning commuters. Today, we've grown into a beloved chain with outlets across India, but our soul remains the same.</p>
+        <p>We source beans directly from estates in Coorg, Wayanad, and Chikmagalur — supporting local farmers and ensuring freshness in every cup.</p>
+        <div class="features-list mt-4">
+          <div class="feature-item"><i class="fas fa-check-circle"></i> Single-origin, ethically sourced beans</div>
+          <div class="feature-item"><i class="fas fa-check-circle"></i> In-house roasting every morning</div>
+          <div class="feature-item"><i class="fas fa-check-circle"></i> Certified SCA baristas</div>
+          <div class="feature-item"><i class="fas fa-check-circle"></i> Vegan & dairy-free options available</div>
+        </div>
+        <a href="about.html" class="btn btn-primary-custom mt-4">Read Our Story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video Section -->
+<section class="video-section">
+  <div class="container-fluid p-0 position-relative">
+    <div class="video-overlay">
+      <div class="video-content text-center">
+        <p class="section-tag"><i class="fas fa-play-circle"></i> Watch</p>
+        <h2>The Art of Brewing</h2>
+        <p>See how we craft your perfect cup from bean to brew</p>
+        <button class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal">
+          <i class="fas fa-play"></i>
+        </button>
+      </div>
+    </div>
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="video/cafe promo.mp4" type="video/mp4" />
+    </video>
+  </div>
+</section>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div class="ratio ratio-16x9">
+          <iframe src="video/cafe promo.mp4" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Testimonials -->
+<section class="section-padding bg-light-cream">
+  <div class="container">
+    <div class="section-header text-center">
+      <p class="section-tag"><i class="fas fa-quote-left"></i> Testimonials</p>
+      <h2 class="section-title">What Our Guests Say</h2>
+    </div>
+    <div id="testimonialCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="testimonial-card text-center">
+                <div class="stars mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="testimonial-text">"Chai & Brew serves the most authentic filter coffee I've had outside my grandmother's kitchen. The ambience is perfect for working or unwinding!"</p>
+                <div class="testimonial-author mt-4">
+
+                  <div>
+                    <strong>Priya Sharma</strong>
+                    <span>Mumbai, Maharashtra</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="testimonial-card text-center">
+                <div class="stars mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="testimonial-text">"Best cold brew in Bangalore! I visit every weekend. The staff is incredibly warm and the loyalty program is a great touch. Highly recommend!"</p>
+                <div class="testimonial-author mt-4">
+                 
+                  <div>
+                    <strong>Arjun Nair</strong>
+                    <span>Bengaluru, Karnataka</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="testimonial-card text-center">
+                <div class="stars mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                <p class="testimonial-text">"Perfect spot for business meetings! Great Wi-Fi, cozy seating, and the Masala Chai Latte is absolutely divine. My team loves this place!"</p>
+                <div class="testimonial-author mt-4">
+                  <div>
+                    <strong>Meera Pillai</strong>
+                    <span>Chennai, Tamil Nadu</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev testimonial-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="carousel-control-next testimonial-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter-section section-padding">
+  <div class="container">
+    <div class="newsletter-box text-center">
+      <i class="fas fa-envelope-open-text newsletter-icon"></i>
+      <h2>Subscribe & Get 10% Off</h2>
+      <p>Join our mailing list for exclusive deals, new menu launches, and coffee tips.</p>
+      <form class="newsletter-form mt-4" id="newsletterForm" novalidate>
+        <div class="input-group">
+          <input type="email" class="form-control" placeholder="Enter your email address" id="newsletterEmail" required />
+          <button class="btn btn-primary-custom" type="submit">Subscribe <i class="fas fa-paper-plane ms-1"></i></button>
+        </div>
+        <div class="invalid-feedback d-block" id="newsletterError"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand d-flex align-items-center mb-3">
+          <div class="logo-icon me-2"><i class="fas fa-mug-hot"></i></div>
+          <span class="logo-text">Chai <span>&</span> Brew</span>
+        </div>
+        <p>India's favourite artisan coffee shop — crafting extraordinary experiences one cup at a time since 2010.</p>
+        <div class="social-links mt-3">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h5 class="footer-heading">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+          <li><a href="menu.html"><i class="fas fa-angle-right"></i> Menu</a></li>
+          <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+          <li><a href="gallery.html"><i class="fas fa-angle-right"></i> Gallery</a></li>
+          <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact</a></li>
+          <li><a href="reservation.html"><i class="fas fa-angle-right"></i> Reservation</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-heading">Opening Hours</h5>
+        <ul class="hours-list">
+          <li><span>Monday – Friday</span><span>7:00 AM – 10:00 PM</span></li>
+          <li><span>Saturday</span><span>8:00 AM – 11:00 PM</span></li>
+          <li><span>Sunday</span><span>9:00 AM – 9:00 PM</span></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-heading">Contact Us</h5>
+        <ul class="contact-list">
+          <li><i class="fas fa-map-marker-alt"></i> Jalandhar - Delhi, Grand Trunk Rd, Phagwara, Punjab 144411</li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:hello@chaiandbrew.in">hello@chaiandbrew.in</a></li>
+          <li><i class="fas fa-globe"></i> www.chaiandbrew.in</li>
+        </ul>
+        <div class="payment-methods mt-3">
+          <i class="fab fa-cc-visa" title="Visa"></i>
+          <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+          <i class="fab fa-google-pay" title="Google Pay"></i>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p class="footer-copy">© 2026 Chai & Brew. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
